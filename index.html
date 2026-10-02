@@ -222,7 +222,50 @@ body.presentation-started #impress{display:block}
 #revealHint.show{opacity:.85}
 @media(max-width:800px){.brand-mark{width:92px;right:18px;top:16px}.tf-ring.r2{width:60vw;height:60vw}#revealHint{bottom:12px;font-size:10px}.scene-fx{opacity:.6}}
 @media(prefers-reduced-motion:reduce){.scene-fx *{animation:none!important}#transitionFx{display:none!important}}
-</style></head><body>
+</style>
+<style id="editorial-book-upgrade">
+/* Editorial textbook system: a clean, printable biology-book look. */
+:root{--book-navy:#17223d;--book-ink:#273142;--book-gold:#f7c53f;--book-red:#d94a52;--book-paper:#fcfaf5;--book-mint:#64c7bf}
+html,body{background:#e9e5dc;font-family:Raleway,"Segoe UI",Arial,sans-serif}
+#impress .step.sl{border-radius:0;box-shadow:0 28px 72px rgba(30,35,48,.23);background:var(--book-paper)!important;color:var(--book-ink)}
+#impress .step.sl::before{content:"";right:0;top:0;width:100%;height:18px;border-radius:0;background:linear-gradient(90deg,var(--book-red) 0 24%,var(--book-gold) 24% 42%,var(--book-navy) 42% 100%);opacity:1}
+#impress .step.sl::after{left:auto;right:-100px;bottom:-140px;width:310px;height:310px;background:var(--book-gold);opacity:.12;border-radius:50%}
+#impress .theme-dark,#impress .theme-night,#impress .theme-navy{background:var(--book-navy)!important;color:#f8f2e6}
+#impress .theme-dark::before,#impress .theme-night::before,#impress .theme-navy::before{background:linear-gradient(90deg,var(--book-gold) 0 24%,#f7eee0 24% 42%,var(--book-red) 42% 100%)}
+#impress .hd{left:72px;top:48px;border-left:8px solid var(--book-gold);padding-left:17px}
+#impress .hd small{color:var(--book-red);letter-spacing:3px;font-size:15px}
+#impress .hd h2{color:var(--book-navy);font-size:56px;line-height:1.02}
+#impress .hd h2 span{color:var(--book-red)}
+#impress .theme-dark .hd h2,#impress .theme-night .hd h2,#impress .theme-navy .hd h2{color:#fff}
+#impress .theme-dark .hd h2 span,#impress .theme-night .hd h2 span,#impress .theme-navy .hd h2 span{color:var(--book-gold)}
+#impress .row{top:160px;left:72px;right:72px;bottom:68px}
+#impress .tt{left:86px;top:164px;width:920px;border-left:10px solid var(--book-gold);padding-left:28px}
+#impress .tt h3{font-size:28px;color:var(--book-gold);letter-spacing:7px}
+#impress .tt h1{font-family:Georgia,"Times New Roman",serif;font-size:100px;color:#fff;letter-spacing:-2px;margin:10px 0 30px}
+#impress .tt .pl{border-radius:5px;background:var(--book-gold)!important;color:var(--book-navy)!important;box-shadow:none;text-transform:uppercase;letter-spacing:2px}
+#impress .ch,#impress .im,#impress .kc,#impress .dv,#impress .it,#impress .cd,.tr{border-radius:8px!important;box-shadow:0 8px 20px rgba(28,37,52,.12)!important;background:#fff!important;color:var(--book-ink)!important}
+#impress .ch{border-left:7px solid var(--book-red);font-size:24px}
+#impress .ch.t{border-left-color:var(--book-gold);background:#fff7dd!important}
+#impress .ch b,#impress .im b,#impress .kc b{color:var(--book-red)}
+#impress .pic{border:1px solid #e5dccd;border-radius:10px!important;background:#fffdf9;box-shadow:0 12px 28px rgba(28,37,52,.12)}
+#impress .dv{border-top:7px solid var(--book-gold);font-size:25px}
+#impress .dvg .dv:nth-child(even){background:#f2f7f5!important;color:var(--book-navy)!important}
+#impress .dvg .dv:nth-child(3n){background:#fff4d2!important}
+#impress .dv i{border-radius:4px;background:var(--book-navy)!important;color:#fff!important}
+#impress .im{border-left:8px solid var(--c)!important}
+#impress .kc{border-top:7px solid var(--book-mint)}
+#impress .gr3 .it{border-bottom:8px solid var(--book-gold)}
+#impress .c4{border-radius:8px!important;box-shadow:0 10px 24px rgba(28,37,52,.18)}
+.brand-mark{top:auto!important;bottom:19px!important;right:34px!important;width:102px!important;opacity:.78!important;filter:none!important}
+#impress .theme-dark .brand-mark,#impress .theme-night .brand-mark,#impress .theme-navy .brand-mark{background:rgba(255,255,255,.92);padding:4px 8px;border-radius:4px}
+#pg{height:8px;background:var(--book-red)!important}
+#revealHint{background:var(--book-navy);border:1px solid rgba(255,255,255,.25);letter-spacing:1px}
+#startGate{background:radial-gradient(circle at 75% 18%,#33446f,#17223d 53%,#0d1325 100%)}
+#startGate .gate{border-top:7px solid var(--book-gold);border-radius:10px}
+#startGate h1{font-family:Georgia,"Times New Roman",serif;color:#fff}
+#startGate .primary{background:var(--book-gold);color:var(--book-navy)}
+</style>
+</head><body>
 <div data-height="720" data-perspective="1200" data-transition-duration="1100" data-width="1280" id="impress">
 <section class="step sl theme-dark"><div aria-hidden="true" class="brand-mark"><img alt="The Doc_Sh logo" class="brand-logo brand-light" src="docsh-logo-transparent.png"/><img alt="The Doc_Sh logo" class="brand-logo brand-dark" src="docsh-logo-dark.png"/></div><div aria-hidden="true" class="scene-fx"><span class="fx-orbit o1"></span><span class="fx-orbit o2"></span><span class="fx-dot d1"></span><span class="fx-dot d2"></span><span class="fx-dot d3"></span></div><div class="tt"><h3>Biochemistry</h3><h1>Carbohydrate Chemistry</h1><span class="pl" style="background:#ffd23f;color:#23414a;font-size:38px;padding:14px 40px">The Doc_Sh</span></div></section>
 <section class="step sl theme-light"><div aria-hidden="true" class="brand-mark"><img alt="The Doc_Sh logo" class="brand-logo brand-light" src="docsh-logo-transparent.png"/><img alt="The Doc_Sh logo" class="brand-logo brand-dark" src="docsh-logo-dark.png"/></div><div aria-hidden="true" class="scene-fx"><span class="fx-orbit o1"></span><span class="fx-orbit o2"></span><span class="fx-dot d1"></span><span class="fx-dot d2"></span><span class="fx-dot d3"></span></div><div class="hd"><small>REVIEW · LECTURE 1</small><h2>Review <span>contents</span></h2></div>
